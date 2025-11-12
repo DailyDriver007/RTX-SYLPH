@@ -1,0 +1,12 @@
+{
+  "GROK_API_KEY": "your_grok_key_here",
+  "OPENAI_API_KEY": "your_openai_key_here",
+  "NVIDIA_API_KEY": "your_nvidia_api_key_here",
+  "HUGGINGFACE_API_KEY": "your_hf_token_here",
+  "WAKE_WORD": "sylph",
+  "VOICE_SPEED": 155,
+  "VOICE_NAME": "zira",
+  "WINDOW_SIZE": [200, 300],
+  "PERSISTENT": true,
+  "AUTO_START": true
+}
