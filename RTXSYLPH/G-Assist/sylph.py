@@ -96,7 +96,7 @@ def draw_frame():
 # SPEAK WITH STATE
 # ================================
 def speak(text):
- global speaking, listening
+    global speaking, listening
     speaking = True
     listening = False
     engine.say(text)
