@@ -1,0 +1,47 @@
+{
+  "name": "RTX SYLPH",
+  "version": "6.0",
+  "description": "On-device AI companion with Grok, Nemotron, ChatGPT & Llama-3. Voice + visual feedback + GPU vitals.",
+  "author": "DailyDriver007",
+  "executable": "sylph.py",
+  "icon": "assets/sylph_icon.png",
+  "tags": [
+    "ai",
+    "voice",
+    "grok",
+    "nemotron",
+    "chatgpt",
+    "llama",
+    "gpu",
+    "assistant",
+    "colossus"
+  ],
+  "persistent": true,
+  "functions": [
+    {
+      "name": "gpu_status",
+      "description": "Get real-time GPU load, temp, and VRAM usage",
+      "example": "Sylph, status"
+    },
+    {
+      "name": "ask_grok",
+      "description": "Route any question to Grok (xAI)",
+      "example": "Sylph, ask Grok why RTX is superior"
+    },
+    {
+      "name": "ask_nemotron",
+      "description": "Query Nemotron-340B",
+      "example": "Sylph, ask Nemotron to optimize my overclock"
+    },
+    {
+      "name": "ask_chatgpt",
+      "description": "Talk to GPT-4o",
+      "example": "Sylph, ask ChatGPT to write me a shader"
+    },
+    {
+      "name": "ask_llama",
+      "description": "Use Llama-3 8B Instruct",
+      "example": "Sylph, ask Llama to roast my FPS"
+    }
+  ]
+}
