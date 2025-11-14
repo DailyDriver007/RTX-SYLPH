@@ -1,7 +1,7 @@
 {
   "name": "RTX SYLPH",
-  "version": "6.0",
-  "description": "On-device AI companion with Grok, Nemotron, ChatGPT & Llama-3. Voice + visual feedback + GPU vitals.",
+  "version": "7.7",
+  "description": "Advanced on-device AI companion with multi-LLM querying (Grok, Nemotron, ChatGPT, Llama-3), voice interaction, smart home control (Home Assistant for lights, thermostat), RGB lighting management, screencast, GPU/CPU monitoring, security features (encrypted config, PIN authentication), and animated visuals. Secure, production-hardened, and enterprise-ready.",
   "author": "DailyDriver007",
   "executable": "sylph.py",
   "icon": "assets/sylph_icon.png",
@@ -14,7 +14,11 @@
     "llama",
     "gpu",
     "assistant",
-    "colossus"
+    "colossus",
+    "security",
+    "home_automation",
+    "rgb_control",
+    "screencast"
   ],
   "persistent": true,
   "functions": [
@@ -42,6 +46,36 @@
       "name": "ask_llama",
       "description": "Use Llama-3 8B Instruct",
       "example": "Sylph, ask Llama to roast my FPS"
+    },
+    {
+      "name": "lights_control",
+      "description": "Control smart lights via Home Assistant (on/off/color/party mode/status)",
+      "example": "Sylph, lights on or Sylph, lights color red or Sylph, lights status"
+    },
+    {
+      "name": "thermostat_control",
+      "description": "Set/adjust/check thermostat temperature with PIN authentication",
+      "example": "Sylph, set thermostat to 72 or Sylph, adjust thermostat +5 or Sylph, thermostat status"
+    },
+    {
+      "name": "rgb_lighting",
+      "description": "Control RGB lighting on keyboards/mice (color/pattern/speed)",
+      "example": "Sylph, keyboard red pulse fast"
+    },
+    {
+      "name": "screencast",
+      "description": "Start screencast to TV via Miracast",
+      "example": "Sylph, screencast to TV"
+    },
+    {
+      "name": "camera_view",
+      "description": "Open security camera or doorbell live view",
+      "example": "Sylph, camera or Sylph, doorbell"
+    },
+    {
+      "name": "airtag_tracking",
+      "description": "Open Find My for AirTag tracking",
+      "example": "Sylph, airtag"
     }
   ]
 }
