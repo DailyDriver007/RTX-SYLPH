@@ -1,12 +1,15 @@
 {
-  "GROK_API_KEY": "your_grok_key_here",
-  "OPENAI_API_KEY": "your_openai_key_here",
-  "NVIDIA_API_KEY": "your_nvidia_api_key_here",
-  "HUGGINGFACE_API_KEY": "your_hf_token_here",
   "WAKE_WORD": "sylph",
   "VOICE_SPEED": 155,
-  "VOICE_NAME": "zira",
-  "WINDOW_SIZE": [200, 300],
-  "PERSISTENT": true,
-  "AUTO_START": true
+  "GROK_API_KEY": "your_grok_api_key_here",
+  "OPENAI_API_KEY": "your_openai_api_key_here",
+  "NVIDIA_API_KEY": "your_nvidia_api_key_here",
+  "HUGGINGFACE_API_KEY": "your_huggingface_api_key_here",
+  "HA_URL": "your_home_assistant_url_here",
+  "HA_KEY": "your_home_assistant_key_here",
+  "BROWSER_PATH": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "CAMERA_URL": "your_camera_url_here",
+  "PIN": "your_pin_here",
+  "VIDEO_PATH": "assets/rtx_sylph_animated.mp4",
+  "FALLBACK_IMAGE_PATH": "assets/rtx_sylph_static.png"
 }
