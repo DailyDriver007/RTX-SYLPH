@@ -1,0 +1,8 @@
+config.json
+*.log
+__pycache__/
+*.pyc
+council_windows/
+cooler_sylph.png
+assets/**/*.mp4
+assets/assets/

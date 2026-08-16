@@ -1,0 +1,197 @@
+{
+  "manifestVersion": 1,
+  "name": "RTX SYLPH",
+  "version": "7.7",
+  "description": "Supreme Secure Home Domination Edition — Voice-activated multi-LLM AI companion with adaptive spiral council, smart home control, GPU monitoring, multi-camera spiral, and always-on cooler mirror.",
+  "author": "DailyDriver007",
+  "executable": "plugin.py",
+  "icon": "assets/SYLPH_Icon.png",
+  "persistent": true,
+  "protocol_version": "2.0",
+  "functions": [
+    {
+      "name": "ask_ai",
+      "description": "Activate the AI council. Queries Grok, ChatGPT, Nemotron, Llama, DeepInfra, and Mistral in parallel, then Grok-led refinement, and opens results in an adaptive spiral of windows.",
+      "tags": ["ai", "council", "llm", "query", "grok", "ask", "question"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "Question for the council"
+        }
+      },
+      "required": ["prompt"]
+    },
+    {
+      "name": "gpu_status",
+      "description": "Report RTX GPU name, load, and temperature, and switch the avatar to cool or overheat animations.",
+      "tags": ["gpu", "status", "hardware", "temperature", "rtx"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "lights_control",
+      "description": "Control smart lights via Home Assistant (on, off, color, or status) for a room.",
+      "tags": ["lights", "home", "automation", "lamp"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "on, off, color, or status"
+        },
+        "room": {
+          "type": "string",
+          "description": "Room or Home Assistant light entity suffix"
+        },
+        "color": {
+          "type": "string",
+          "description": "Color name such as red, green, blue, purple, cyan, white"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "thermostat_control",
+      "description": "Read or set the Home Assistant thermostat temperature.",
+      "tags": ["thermostat", "climate", "home", "temperature"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "status or set"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "Target temperature in Fahrenheit when action is set"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "home_control",
+      "description": "Control a Home Assistant device: lights, thermostat, lock, garage, blinds, fan, tv, music, alarm, or sensor.",
+      "tags": ["home", "automation", "ha", "lock", "garage", "fan", "tv"],
+      "properties": {
+        "device": {
+          "type": "string",
+          "description": "Device name: lights, thermostat, lock, garage, blinds, fan, tv, music, alarm, sensor"
+        },
+        "action": {
+          "type": "string",
+          "description": "status, on, off, open, close, arm, disarm, or set"
+        },
+        "value": {
+          "type": "string",
+          "description": "Numeric value for set (temperature or volume)"
+        }
+      },
+      "required": ["device"]
+    },
+    {
+      "name": "alexa_command",
+      "description": "Send a spoken-style command intended for Alexa (requires Home Assistant integration for real control).",
+      "tags": ["alexa", "home", "voice"],
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "Command to send to Alexa"
+        }
+      },
+      "required": ["command"]
+    },
+    {
+      "name": "google_command",
+      "description": "Send a spoken-style command intended for Google Home (requires Home Assistant integration for real control).",
+      "tags": ["google", "home", "voice"],
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "Command to send to Google Home"
+        }
+      },
+      "required": ["command"]
+    },
+    {
+      "name": "camera_spiral",
+      "description": "Open configured cameras in an adaptive spiral of windows around SYLPH.",
+      "tags": ["camera", "security", "spiral", "cctv"],
+      "properties": {
+        "cameras": {
+          "type": "string",
+          "description": "all, or a comma-separated list of camera names"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "camera_view",
+      "description": "Open a single Ring or IP camera live view.",
+      "tags": ["camera", "security", "ring", "doorbell"],
+      "properties": {
+        "camera": {
+          "type": "string",
+          "description": "Camera name such as front_door, backyard, doorbell, garage"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "find_airtag",
+      "description": "Open Apple Find My in the browser to locate an AirTag.",
+      "tags": ["airtag", "find", "keys", "locate"],
+      "properties": {
+        "item": {
+          "type": "string",
+          "description": "Item name, for example keys or wallet"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "screencast",
+      "description": "Start or stop Windows Miracast / projection to a smart TV.",
+      "tags": ["tv", "screencast", "mirror", "miracast"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "start or stop"
+        }
+      },
+      "required": []
+    },
+    {
+      "name": "close_all",
+      "description": "Close all Chrome/Edge council and camera windows spawned by SYLPH.",
+      "tags": ["ui", "close", "windows"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "randomize_avatar",
+      "description": "Play a random clip from the current animation class.",
+      "tags": ["avatar", "random"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "sequential_avatar",
+      "description": "Play animation clips in order for the current class.",
+      "tags": ["avatar", "sequential"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "use_avatar",
+      "description": "Force a specific avatar video for a number of minutes.",
+      "tags": ["avatar", "force"],
+      "properties": {
+        "video_name": {
+          "type": "string",
+          "description": "Video file name without path, for example SYLPH_IDLE_5"
+        },
+        "duration_minutes": {
+          "type": "number",
+          "description": "How long to keep this clip, in minutes"
+        }
+      },
+      "required": ["video_name"]
+    }
+  ]
+}
