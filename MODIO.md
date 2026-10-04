@@ -2,6 +2,8 @@
 
 Page: https://mod.io/g/g-assist/m/rtxsylph
 
+Current plugin version: **7.9** (Gemini Flash/Pro + NVIDIA Nemotron Lightning/Super/Ultra, Ara voice, world clock).
+
 Upload a zip of `G-Assist-V2/RTX-SYLPH` **without**:
 
 - `config.json` (keys)

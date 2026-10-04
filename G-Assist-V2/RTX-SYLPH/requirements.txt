@@ -13,3 +13,7 @@ bcrypt
 boto3
 screeninfo
 comtypes
+tzdata
+pycaw
+psutil
+pywin32

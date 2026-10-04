@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "name": "RTX SYLPH",
-  "version": "7.7",
-  "description": "Supreme Secure Home Domination Edition — Voice-activated multi-LLM AI companion with adaptive spiral council, smart home control, GPU monitoring, multi-camera spiral, and always-on cooler mirror.",
+  "version": "8.4",
+  "description": "Voice + text companion with Flight/studio license, aptitude sliders, Grok Bot launch, Netflix/Prime, TMDB watch desk, Ara voice, world clock, and AI council.",
   "author": "DailyDriver007",
   "executable": "plugin.py",
   "icon": "assets/SYLPH_Icon.png",
@@ -11,8 +11,8 @@
   "functions": [
     {
       "name": "ask_ai",
-      "description": "Activate the AI council. Queries Grok, ChatGPT, Nemotron, Llama, DeepInfra, and Mistral in parallel, then Grok-led refinement, and opens results in an adaptive spiral of windows.",
-      "tags": ["ai", "council", "llm", "query", "grok", "ask", "question"],
+      "description": "Activate the AI council. Queries Grok, Gemini Flash 3.7, Gemini 3.1 Pro, Nemotron 3.5 Lightning, Nemotron 3 Super, Nemotron Ultra 253B, and Mistral in parallel, then Grok-led refinement.",
+      "tags": ["ai", "council", "llm", "query", "grok", "gemini", "nemotron", "nvidia", "ask", "question"],
       "properties": {
         "prompt": {
           "type": "string",
@@ -22,9 +22,142 @@
       "required": ["prompt"]
     },
     {
+      "name": "chat",
+      "description": "Talk to SYLPH in the text console. Optional file_path for an image, video, or document.",
+      "tags": ["chat", "text", "file", "image", "video", "link"],
+      "properties": {
+        "prompt": { "type": "string", "description": "Message for SYLPH" },
+        "file_path": { "type": "string", "description": "Optional local file, image, or video path" }
+      },
+      "required": []
+    },
+    {
+      "name": "open_netflix",
+      "description": "Open Netflix in the user's browser or installed app. Does not log into Netflix for them.",
+      "tags": ["netflix", "stream", "watch", "launch"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "open_prime",
+      "description": "Open Amazon Prime Video in the user's browser or installed app.",
+      "tags": ["prime", "amazon", "stream", "watch", "launch"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "watch_suggest",
+      "description": "Suggest what to watch on Netflix and/or Prime using TMDB public watch-provider data and Grok. Does not scrape Netflix or Amazon.",
+      "tags": ["netflix", "prime", "watch", "recommend", "tmdb"],
+      "properties": {
+        "platform": { "type": "string", "description": "both, netflix, or prime" }
+      },
+      "required": []
+    },
+    {
+      "name": "quiet_hours",
+      "description": "Mute wake listening except 'sylph I'm back'.",
+      "tags": ["quiet", "mic", "focus"],
+      "properties": {
+        "action": { "type": "string", "description": "on or off" }
+      },
+      "required": []
+    },
+    {
+      "name": "focus_timer",
+      "description": "Start a pomodoro/focus countdown SYLPH will announce.",
+      "tags": ["focus", "pomodoro", "timer"],
+      "properties": {
+        "minutes": { "type": "integer", "description": "Duration in minutes" }
+      },
+      "required": []
+    },
+    {
+      "name": "screenshot_ask",
+      "description": "Capture the desktop and ask SYLPH what is on screen.",
+      "tags": ["screenshot", "vision", "ask"],
+      "properties": {
+        "prompt": { "type": "string", "description": "Optional question about the screenshot" }
+      },
+      "required": []
+    },
+    {
+      "name": "unlock_license",
+      "description": "Activate a Full Grok / Flight license key (SYLPH-PREM-… or SYLPH-SUB-…). Ships as studio until unlocked.",
+      "tags": ["license", "unlock", "premium", "flight"],
+      "properties": {
+        "key": { "type": "string", "description": "License key such as SYLPH-PREM-XXXXXXXX-XXXXXXXX" }
+      },
+      "required": ["key"]
+    },
+    {
+      "name": "sylph_mode",
+      "description": "Switch between Flight (full xAI Grok) and studio demo. Requires a license. Default on a licensed machine is Flight.",
+      "tags": ["flight", "studio", "demo", "mode"],
+      "properties": {
+        "mode": { "type": "string", "description": "flight, studio, or demo" }
+      },
+      "required": []
+    },
+    {
+      "name": "set_aptitude",
+      "description": "Set an aptitude 0-100: accuracy, wit, depth, or spoken. Licensed machines only.",
+      "tags": ["aptitude", "accuracy", "wit", "depth", "spoken"],
+      "properties": {
+        "name": { "type": "string", "description": "accuracy, wit, depth, or spoken" },
+        "value": { "type": "integer", "description": "0-100" }
+      },
+      "required": ["name"]
+    },
+    {
+      "name": "open_grok_bot",
+      "description": "Open official Grok Bot (xAI teammate with its own cloud computer). Included with SuperGrok Plus. No public Bot API yet.",
+      "tags": ["grok", "bot", "xai", "supergrok"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "world_clock",
+      "description": "Speak and report the always-on world clock: Pacific, Eastern, London, Berlin, UTC, India, Beijing, Tokyo, Sydney, Sao Paulo.",
+      "tags": ["clock", "time", "timezone", "world"],
+      "properties": {},
+      "required": []
+    },
+    {
       "name": "gpu_status",
       "description": "Report RTX GPU name, load, and temperature, and switch the avatar to cool or overheat animations.",
       "tags": ["gpu", "status", "hardware", "temperature", "rtx"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "sys_status",
+      "description": "Report CPU, RAM, disk, and GPU load together.",
+      "tags": ["system", "cpu", "ram", "disk", "status", "performance"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "volume_control",
+      "description": "Mute, unmute, or set Windows master volume.",
+      "tags": ["volume", "mute", "sound", "audio"],
+      "properties": {
+        "action": { "type": "string", "description": "mute, unmute, up, down, or set" },
+        "level": { "type": "string", "description": "0-100 when action is set" }
+      },
+      "required": []
+    },
+    {
+      "name": "take_screenshot",
+      "description": "Capture the desktop and save it under Pictures/Screenshots.",
+      "tags": ["screenshot", "capture", "screen"],
+      "properties": {},
+      "required": []
+    },
+    {
+      "name": "lock_pc",
+      "description": "Lock the Windows workstation.",
+      "tags": ["lock", "security", "pc"],
       "properties": {},
       "required": []
     },

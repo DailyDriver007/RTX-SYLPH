@@ -1,4 +1,11 @@
 config.json
+license.json
+owner.json
+desk_layout.json
+sylph_crash.log
+_smoke_gemini_tts.py
+_smoke_nvidia.py
+_key_*.png
 *.log
 __pycache__/
 *.pyc

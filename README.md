@@ -1,6 +1,6 @@
 # RTX-SYLPH
 
-RTX SYLPH is an ethereal blue-to-NVIDIA-neon-green sprite. She sits as an upper-left HUD, listens for **sylph**, and runs a multi-model AI council (Grok, ChatGPT, Nemotron, Llama, DeepInfra, Mistral) plus GPU, home, and camera commands.
+RTX SYLPH is an ethereal blue-to-NVIDIA-neon-green sprite. She sits as a centered HUD, listens for **sylph**, and runs a multi-model AI council (Grok, Gemini Flash 3.7, Gemini 3.1 Pro, Nemotron 3.5 Lightning, Nemotron 3 Super, Nemotron Ultra 253B, Mistral) plus GPU, home, camera, Ara voice, and a world clock.
 
 ## Layout
 
