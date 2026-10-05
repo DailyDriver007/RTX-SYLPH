@@ -1,4 +1,8 @@
 """
+Copyright (c) 2025–2026 Kyle Baker. All rights reserved.
+Personal use only. See LICENSE. No commercial use, public display, or re-skin
+without a written license from Kyle Baker.
+
 NVIDIA G-Assist entry point for RTX SYLPH.
 
 G-Assist looks for plugin.py in the plugin folder and runs it with

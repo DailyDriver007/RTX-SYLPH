@@ -1,4 +1,8 @@
 """
+Copyright (c) 2025–2026 Kyle Baker. All rights reserved.
+Personal use only. See LICENSE. No commercial use, public display, or re-skin
+without a written license from Kyle Baker.
+
 RTX SYLPH — G-Assist V2 Plugin
 Supreme Secure Home Domination Edition
 Original concept: @BanditsOfBedlam [Discord] / DailyDriver007 [GitHub]

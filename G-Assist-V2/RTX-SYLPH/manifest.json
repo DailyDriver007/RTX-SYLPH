@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "name": "RTX SYLPH",
-  "version": "8.4",
-  "description": "Voice + text companion with Flight/studio license, aptitude sliders, Grok Bot launch, Netflix/Prime, TMDB watch desk, Ara voice, world clock, and AI council.",
+  "version": "8.5",
+  "description": "Personal-use copy only. No commercial use, public display, or re-skin without a written license from Kyle Baker. Voice + text companion with Flight/studio license, aptitude sliders, Grok Bot launch, Netflix/Prime, TMDB watch desk, Ara voice, world clock, and AI council.",
   "author": "DailyDriver007",
   "executable": "plugin.py",
   "icon": "assets/SYLPH_Icon.png",

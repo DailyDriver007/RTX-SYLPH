@@ -1,5 +1,9 @@
 # RTX SYLPH — G-Assist V2 plugin
 
+Copyright (c) 2025–2026 Kyle Baker. All rights reserved. Terms: [`LICENSE`](LICENSE) (same text as the repository root).
+
+You may download one copy for your own private, non-commercial use. That copy is not for public display. You may not use this code commercially, copy it into another product, repository, or service, or re-skin SYLPH without a written license from Kyle Baker. A download is not that license. When a commercial license is granted in writing, Kyle Baker retains the copyright and the SYLPH name. That license is non-exclusive, non-transferable, and cannot be sublicensed. The customer may run the official build on the machines named in the grant. The customer may not copy the code into another product, repository, or service. The license ends if they do. Requests: youshould@getacustom.one
+
 Voice-activated companion for [NVIDIA Project G-Assist](https://github.com/NVIDIA/g-assist).  
 States of being drive her animation classes. The AI council opens one window per model.
 

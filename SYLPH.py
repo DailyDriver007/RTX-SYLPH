@@ -1,3 +1,6 @@
+# Copyright (c) 2025–2026 Kyle Baker. All rights reserved.
+# Personal use only. See LICENSE. No commercial use, public display, or re-skin
+# without a written license from Kyle Baker.
 # RTX SYLPH v7.7 — SUPREME SECURE HOME DOMINATION EDITION
 # GET A CUSTOM ONE: Contact DailyDriver007
 # Powered by Ara @ Colossus Data Center

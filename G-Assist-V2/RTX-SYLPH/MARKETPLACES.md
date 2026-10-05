@@ -6,7 +6,7 @@ Sell the **companion** (HUD, voice, desk, animations, installer), not other comp
 
 Never ship `config.json` with keys. Buyer pastes **their** Grok / Gemini / NVIDIA / TMDB / HA keys.
 
-Clips stay a Drive pack or a paid **asset DLC** (your Imagine likeness). Plugin code can be cheaper or free; the holographic pack is the premium SKU.
+Clips stay a Drive pack or a paid **asset DLC** (your Imagine likeness). The personal-use plugin download is not a commercial grant. The holographic pack and any commercial, public-display, or re-skin use are paid written licenses.
 
 ## Package (v1 store zip)
 
@@ -27,7 +27,7 @@ Standalone SKU (no G-Assist): same payload, launch `run_sylph.bat` only.
 
 | Place | Fit | Notes |
 |---|---|---|
-| **NVIDIA G-Assist on mod.io** | Best first | She is a G-Assist V2 plugin. Often **free or donation**. Follow NVIDIA plugin rules. |
+| **NVIDIA G-Assist on mod.io** | Personal-use download | One private copy under `LICENSE`. Commercial use, public display, and re-skin need a written license. Follow NVIDIA plugin rules. |
 | **Gumroad / Itch.io** | Best paid | Standalone HUD + clip pack. Simple seller TOS. You keep the customer list. |
 | **Ko-fi / Patreon** | Recurring | Early clips, voice presets, new seats. |
 | **Steam** | Later | Direct-to-desktop companion. Review, trailer, 18+ if needed. Heavy for v1. |
@@ -37,7 +37,7 @@ Standalone SKU (no G-Assist): same payload, launch `run_sylph.bat` only.
 
 Lead with **mod.io (G-Assist) + Gumroad (paid standalone + assets)**.
 
-Price ballpark: free plugin on mod.io; **$12–25** standalone studio; **$8–15** clip-pack DLC if the plugin is free.
+Price ballpark: mod.io is the personal-use copy, not a commercial grant. **$12–25** standalone studio where a written license allows it; **$8–15** clip-pack DLC. Commercial use, public display, and re-skin are separate written licenses.
 
 **Flight / Full Grok unlock (the real SKU):** studio ships witty but truncated (the “carbon fiber / light as a lie” rehearsal). A license key switches her to **Flight** — full xAI Grok, truth-seeking prompts, longer answers, model thinking, and a local NVIDIA hardware bible (RTX 5090, RTX PRO 6000 Blackwell, Grace Blackwell / GB200). Licensed buyers can still **demo studio** and slide aptitudes (accuracy, wit, depth, spoken) on the PRO tile. **$50 perpetual** or **$8/month**. Keys are `SYLPH-PREM-…` / `SYLPH-SUB-…` issued with `issue_license.py`. Gumroad can email the key after payment. Shipped `config.example.json` keeps `SYLPH_OWNER_FLIGHT` false so store copies stay studio until the buyer pastes a key.
 
@@ -45,8 +45,23 @@ Price ballpark: free plugin on mod.io; **$12–25** standalone studio; **$8–15
 
 ## Legal on listings
 
-- Not affiliated with NVIDIA, Google, xAI, Netflix, Amazon, or TMDB beyond their public APIs and required TMDB attribution.  
-- Buyer uses their own streaming accounts and API keys.  
+The listing text and the zip must both carry [`LICENSE`](LICENSE). A page that sounds more generous than the zip gives the buyer the more generous story.
+
+Personal download: one copy, private, non-commercial, not for public display. No re-skin. No copying the code into another product, repository, or service.
+
+Commercial license, only when Kyle Baker grants it in writing (youshould@getacustom.one):
+
+- Kyle Baker retains the copyright and the SYLPH name.
+- The license is non-exclusive, non-transferable, and cannot be sublicensed.
+- The customer may run the official build on the machines named in the grant.
+- The customer may not copy the code into another product, repository, or service.
+- Public display and any re-skin are included only when the written grant says so.
+- The license ends if the customer breaks these terms.
+
+Also:
+
+- Not affiliated with NVIDIA, Google, xAI, Netflix, Amazon, or TMDB beyond their public APIs and required TMDB attribution.
+- Buyer uses their own streaming accounts and API keys.
 - Your likeness/clips: you license, they don’t resell.
 
 ## Mobile version
